@@ -1,0 +1,1 @@
+<h1>this is test ftl, get param is ${userName}</h1>
