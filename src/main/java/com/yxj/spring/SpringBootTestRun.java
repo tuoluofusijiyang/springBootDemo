@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.client.RestTemplate;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -32,18 +33,18 @@ import java.util.Map;
  * 开启事物（@EnableTransactionManagement）
  */
 @SpringBootApplication
-//@Import(AopMapper.class)
+@Import(RestTemplate.class)
 public class SpringBootTestRun {
 
     public static void main(String[] args){
-        //SpringApplication.run(SpringBootTestRun.class, args);
+        SpringApplication.run(SpringBootTestRun.class, args);
         /*SpringApplication springBootTestRun = new SpringApplication(SpringBootTestRun.class);
         ConfigurableApplicationContext run = springBootTestRun.run(args);
         run.start();*/
-        System.out.println("--------分割线--------");
+        /*System.out.println("--------分割线--------");
         ArrayList<Map> maps = new ArrayList<>();
         HashMap<String, Object> map = new HashMap<>();
         maps.add(map);
-        System.out.println("1111");
+        System.out.println("1111");*/
     }
 }
