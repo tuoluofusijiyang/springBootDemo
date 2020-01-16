@@ -73,6 +73,8 @@ public class MyController {
         urlList.add("http://www.yangxj.top/2019/design005/");
         urlList.add("http://www.yangxj.top/2019/design006/");
         urlList.add("http://www.yangxj.top/2019/design007/");
+        urlList.add("http://www.yangxj.top/2019/design008/");
+        urlList.add("http://www.yangxj.top/2019/design009/");
         StringBuffer urlBuffer = new StringBuffer();
         for (String url : urlList) {
             urlBuffer.append(url + "\n");
