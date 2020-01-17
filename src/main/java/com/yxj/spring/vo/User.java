@@ -9,6 +9,7 @@ package com.yxj.spring.vo;
  * @value v1.0       杨小杰       2020/1/6 17:26
  */
 public class User {
+    private String id;
     private String userName;
     private String passWord;
 
@@ -27,6 +28,15 @@ public class User {
 
     public User setPassWord(String passWord) {
         this.passWord = passWord;
+        return this;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public User setId(String id) {
+        this.id = id;
         return this;
     }
 }
