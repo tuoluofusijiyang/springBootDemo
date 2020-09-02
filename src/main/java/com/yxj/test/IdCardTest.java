@@ -10,7 +10,7 @@ public class IdCardTest {
 
     public static void main(String[] args) {
         int count = 0;
-        String prefix = "14272919980324";
+        String prefix = "14272911110324";
         ArrayList<String> strings = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
