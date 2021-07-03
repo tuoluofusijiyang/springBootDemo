@@ -1,3 +1,4 @@
+/*
 package com.yxj.test;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -8,3 +9,4 @@ public class BCryptCode {
         System.out.println(pwd);
     }
 }
+*/

@@ -1,5 +1,6 @@
 package com.yxj.spring.controller;
 
+import com.yxj.spring.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -30,6 +31,9 @@ public class MyController {
     @Autowired
     RestTemplate restTemplate;
 
+    @Autowired
+    TestService testService;
+
     @GetMapping("testWeb")
     public String testWeb(HttpServletRequest request) {
         System.out.println("测试");
@@ -52,6 +56,12 @@ public class MyController {
         String a = "1";
         return null;
     }
+    @GetMapping("/testCallBack")
+    public void download() {
+        testService.test();
+    }
+
+
 
     @GetMapping("/baidu")
     public void baidu(HttpServletRequest request, HttpServletResponse response) throws Exception {
